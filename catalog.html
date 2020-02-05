@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -10,17 +11,17 @@
         <img src="img/catalog/logo.svg" width="111" height="24"
         alt="Логотип barbershop">
         <ul>
-          <li><a href="info.html">информация</a></li>
-          <li><a href="news.html">новости</a></li>
-          <li><a href="price.html">прайс-лист</a></li>
-          <li><a href="catalog.html">магазин</a></li>
-          <li><a href="contacts.html">контакты</a></li>
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul>
           <li>
             <img src="img/index/login.svg" width="14" height="14"
-            alt="">
-            <button type="button">Войти</button>
+            alt="иконка для входа">
+            <button type="button">Вход</button>
           </li>
         </ul>
       </nav>
@@ -33,8 +34,83 @@
         <li>Средства для ухода</li>
       </ul>
         <section>
-          <h2>Форма заказа</h2>
-          <!-- Здесь будет форма-->
+          <h2 class="visually-hidden">Форма заказа</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend>Производители</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="baxter-of-california"
+                  id="filter-baxter-of-california" checked>
+                  <label for="filter-baxter-of-california">
+                    Baxter of California
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="mr-natty"
+                  id="filter-mr-natty">
+                  <label for="filter-mr-natty">
+                    Mr Natty
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="suavecito"
+                  id="filter-suavecito" checked>
+                  <label for="filter-suavecito">
+                    Suavecito
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="malin-goetz"
+                  id="filter-malin-goetz">
+                  <label for="filter-malin-goetz">
+                    Malin+Goetz
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="murray's"
+                  id="filter-murray's">
+                  <label for="filter-murray's">
+                    Murray's
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="american-crew"
+                  id="filter-american-crew" checked>
+                  <label for="filter-american-crew">
+                    American Crew
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="product group" value="shaving"
+                  id="filter-shave">
+                  <label for="filter-shave">
+                    Бритвенные принадлежности
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="product group" value="hair-care"
+                  id="filter-care" checked>
+                  <label for="filter-care">
+                    Средства для ухода
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="product group" value="accessories"
+                  id="filter-accessories">
+                  <label for="filter-accessories">
+                    Аксессуары
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
         </section>
         <section>
           <h2>Список товаров</h2>
@@ -139,6 +215,7 @@
           <ol>
             <li><a href="#">1</a></li>
             <li><a>2</a></li>
+            <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
           </ol>
         </section>
