@@ -8,7 +8,7 @@
   <body>
     <header>
       <nav>
-        <img src="img/index/index-logo.svg" width="371" height="155"
+        <img src="img/index-logo.svg" width="371" height="155"
         alt="Логотип barbershop">
         <ul>
           <li><a href="info.html">информация</a></li>
@@ -19,7 +19,7 @@
         </ul>
         <ul>
           <li>
-            <img src="img/index/login.svg" width="14" height="14"
+            <img src="img/login.svg" width="14" height="14"
             alt="иконка для входа">
             <button type="button">Вход</button>
           </li>
@@ -70,7 +70,7 @@
         <h2>Фотогалерея</h2>
         <figure>
           <a href="#">
-            <img src="img/index/gallery.jpg" width="286" height="164"
+            <img src="img/gallery.jpg" width="286" height="164"
             alt="Фото интерьера">
           </a>
         </figure>
@@ -131,12 +131,11 @@
       <div>
         <p>Давайте дружить</p>
         <ul>
-          <li><a href="https://vk.com"><img src="img/index/vk.svg" width="27"
-            height="15" alt="Лого ВК"></a></li>
-          <li><a href="https://facebook.com"><img src="img/index/facebook.svg"
-            width="11" height="22" alt="Лого Facebook"></a></li>
-          <li><a href="https://instagram.com"><img src="img/index/instagram.svg"
-            width="20" height="20" alt="Лого Инстаграм"></a></li>
+          <li><a href="https://vk.com" aria-label="Логотип ВК"></a></li>
+          <li><a href="https://facebook.com"
+          aria-label="Логотип Фэйсбук"></a></li>
+          <li><a href="https://instagram.com"
+          aria-label="Логотип Инстаграма"></a></li>
         </ul>
         <p>
           Разработано:
@@ -147,29 +146,35 @@
     <section>
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="" action="index.html" method="post">
         <p>
-          <label for="user-login">Логин</label>
-          <input type="email" name="login" placeholder="email@example.com"
-          id="user-login">
+          <label for="user-login"></label>
+          <input type="email" name="login" id="user-login"
+            placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-password">Пароль</label>
-          <input type="password" name="password" placeholder="••••••••"
-          id="user-password">
+          <label for="user-password"></label>
+          <input type="password" name="password" id="user-password"
+          placeholder="********" >
         </p>
         <p>
-          <input type="checkbox" name="remember" id="login-password-info">
-          <label for="login-password-info">Запомните меня</label>
-          <a href="#">Забыли пароль?</a>
+          <label>
+            <input type="checkbox" name="remember">
+            Запомните меня
+          </label>
+          <a href="#">Я забыл пароль</a>
         </p>
         <button type="submit">Войти</button>
       </form>
       <button type="button">Закрыть</button>
     </section>
-
     <section>
       <h2>Как до нас добраться</h2>
+      <p>
+        <img src="img/map.png" width="766" height="560"
+          alt="Офис компании по адресу ул. Большая Конюшенная 19/8,
+          Санкт-Петербург">
+      </p>
       <button type="button">Закрыть</button>
     </section>
   </body>

@@ -8,7 +8,7 @@
   <body>
     <header>
       <nav>
-        <img src="img/catalog/logo.svg" width="111" height="24"
+        <img src="img/logo.svg" width="111" height="24"
         alt="Логотип barbershop">
         <ul>
           <li><a href="info.html">Информация</a></li>
@@ -19,7 +19,7 @@
         </ul>
         <ul>
           <li>
-            <img src="img/index/login.svg" width="14" height="14"
+            <img src="img/login.svg" width="14" height="14"
             alt="иконка для входа">
             <button type="button">Вход</button>
           </li>
@@ -117,7 +117,7 @@
           <ul>
             <li>
               <a href="catalog-item.html">
-                <img src="img/catalog/nabor-baxter.jpg" width="220" height="165"
+                <img src="img/nabor-baxter.jpg" width="220" height="165"
                  alt="Набор для путешествий «Baxter of California»">
               </a>
               <h3>
@@ -133,7 +133,7 @@
             </li>
             <li>
               <a href="catalog-item.html">
-                <img src="img/catalog/condition-baxter.jpg" width="220" height="165"
+                <img src="img/condition-baxter.jpg" width="220" height="165"
                 alt="Увлажняющий кондиционер «Baxter of California»">
               </a>
               <h3>
@@ -149,7 +149,7 @@
             </li>
             <li>
               <a href="catalog-item.html">
-                <img src="img/catalog/gel-suavecito.jpg" width="220" height="165"
+                <img src="img/gel-suavecito.jpg" width="220" height="165"
                 alt="Гель для волос «Suavecito»">
               </a>
               <h3>
@@ -165,7 +165,7 @@
             </li>
             <li>
               <a href="catalog-item.html">
-                <img src="img/catalog/glina-crew.jpg" width="220" height="165"
+                <img src="img/glina-crew.jpg" width="220" height="165"
                 alt="Глина для укладки волос «American crew»">
               </a>
               <h3>
@@ -181,7 +181,7 @@
             </li>
             <li>
               <a href="catalog-item.html">
-                <img src="img/catalog/gel-crew.jpg" width="220" height="165"
+                <img src="img/gel-crew.jpg" width="220" height="165"
                 alt="Гель для волос «American crew»">
               </a>
               <h3>
@@ -197,7 +197,7 @@
             </li>
             <li>
               <a href="catalog-item.html">
-                <img src="img/catalog/nabor-beard-baxter.jpg" width="220"
+                <img src="img/nabor-beard-baxter.jpg" width="220"
                 height="165" alt="Набор для бритья «Baxter of California»">
               </a>
               <h3>
@@ -230,12 +230,11 @@
       <div>
         <p>Давайте дружить</p>
         <ul>
-          <li><a href="https://vk.com"><img src="img/index/vk.svg" width="27"
-            height="15" alt="Лого ВК"></a></li>
-          <li><a href="https://facebook.com"><img src="img/index/facebook.svg"
-            width="11" height="22" alt="Лого Facebook"></a></li>
-          <li><a href="https://instagram.com"><img src="img/index/instagram.svg"
-            width="20" height="20" alt="Лого Инстаграм"></a></li>
+          <li><a href="https://vk.com" aria-label="Логотип ВК"></a></li>
+          <li><a href="https://facebook.com"
+          aria-label="Логотип Фэйсбук"></a></li>
+          <li><a href="https://instagram.com"
+          aria-label="Логотип Инстаграма"></a></li>
         </ul>
         <p>
           Разработано:
@@ -246,7 +245,26 @@
     <section>
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
+      <form class="" action="index.html" method="post">
+        <p>
+          <label for="user-login"></label>
+          <input type="email" name="login" id="user-login"
+            placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-password"></label>
+          <input type="password" name="password" id="user-password"
+          placeholder="********" >
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember">
+            Запомните меня
+          </label>
+          <a href="#">Я забыл пароль</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
   </body>
